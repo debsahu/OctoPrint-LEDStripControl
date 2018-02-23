@@ -19,7 +19,7 @@ Implements the M150 command syntax from the latest Marlin.
 1. Install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager)
 or manually using this URL:
 
-    	https://github.com/google/OctoPrint-LEDStripControl/archive/master.zip
+    	https://github.com/debsahu/OctoPrint-LEDStripControl/archive/master.zip
 
 1. Restart OctoPrint
 
@@ -28,6 +28,8 @@ or manually using this URL:
 **NOTE: GPIO pins should be specified as physical number and not BCM number.**
 
 Configure the GPIO pins via the OctoPrint settings UI.
+
+Added support for Pi-Blaster back in.
 
 ## Disclaimer
 

@@ -26,10 +26,18 @@
         </div>
     </div>
 
+
     <div class="control-group">
-        <label class="checkbox">
-            <input type="checkbox" data-bind="checked: settings.plugins.LEDStripControl.pigpiod">Use <a href="http://abyz.co.uk/rpi/pigpio/pigpiod.html">pigpiod</a>
-            <span class="help-inline">If unchecked use RPi.GPIO.  PiGPIOd should give smoother PWM frequencies but requires a more involved setup. Please see the <a href="http://abyz.co.uk/rpi/pigpio/pigpiod.html">documentation</a> for details.</span>
+        <label class="radio">
+            <input type="radio" data-bind="checked: settings.plugins.LEDStripControl.gpio" name="optradio" checked="checked">Use RPi.GPIO</a>
+        </label>
+        <label class="radio">
+            <input type="radio" data-bind="checked: settings.plugins.LEDStripControl.pigpiod" name="optradio">Use <a href="http://abyz.co.uk/rpi/pigpio/pigpiod.html">pigpiod</a>
+            <span class="help-inline">PiGPIOd should give smoother PWM frequencies but requires a more involved setup. Please see the <a href="http://abyz.co.uk/rpi/pigpio/pigpiod.html">documentation</a> for details.</span>
+        </label>
+        <label class="radio">
+            <input type="radio" data-bind="checked: settings.plugins.LEDStripControl.piblaster" name="optradio">Use <a href="https://github.com/sarfata/pi-blaster">Pi-Blaster</a>
+            <span class="help-inline">Pi-Blaster should give smoother PWM frequencies but requires a more involved setup. Install Pi-Blaster manually by following the <a href="https://github.com/sarfata/pi-blaster"> documentation </a> </span>
         </label>
     </div>
 </form>
